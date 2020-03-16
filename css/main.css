@@ -3,6 +3,23 @@
     height: 100vh;
 }
 
+/* The animation code */
+@keyframes animatename {
+    0%   {color: red; font-family: "Monospace"}
+    25%  {color: yellow; font-family: "Verdana"}
+    50%  {color: blue; font-family: "Cursive"}
+    75%  {color: green; font-family: "Comic Sans MS" }
+    100% {color: pink;  font-family: "Fantasy"}
+  }
+  
+
+
+#welcome-section h1:hover{
+    position: relative;
+    animation-name: animatename;
+    animation-duration: 10s;
+}
+
 #projects {
     background-color: #ADD8E6;
     padding: 10em;
