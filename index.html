@@ -14,6 +14,8 @@
         <!-- Latest compiled JavaScript -->
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script> 
 
+        <script src='script/main.js'></script>
+        
         <title>Winnie's Portfolio</title>
         <navbar id='navbar'>
             <!-- Add links to different section of webpage.-->
@@ -24,14 +26,20 @@
     </head>
     <body>
         <div id='welcome-section'> 
-            <h1>Welcome to Winnie's Portfolio!</h1>
-            <h2> I am inspired to be a full stack developer.</h2>
+            <h1>Winnie Lam</h1>
+            <h2> I am inspired to be a full stack developer. I don't mind starting as frontend or backend software developer.</h2>
         </div>
         <div id='projects'>
             <h1>Projects</h1>
-            <div class='project-tile'>
-                <!-- Add a link to a project -->
-                <a id='project-mylibrary'' href='https://wwyl1234.github.io/my-library/' target='_blank'>MyLibrary</h2>
+            <div id='projects-table' class='row'>
+                <div class='project-tile col-md-3' onclick="openLink('project-mylibrary')">
+                    <!-- Add a link to a project -->
+                    <a id='project-mylibrary' href='https://wwyl1234.github.io/my-library/' target='_blank'>MyLibrary</h2>
+                </div>
+                <div class='project-tile col-md-3 col-md-offset-1' onclick="openLink('project-website')">
+                    <!-- Add a link to a project -->
+                    <a id='project-website' href='https://wwyl1234.github.io/website/' target='_blank'>Website</h2>
+                </div>
             </div>
         </div>
         <div id='info'>

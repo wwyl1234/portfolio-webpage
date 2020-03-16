@@ -4,12 +4,12 @@
 }
 
 #projects {
-    background-color: blue;
-    padding: 2em;
+    background-color: #ADD8E6;
+    padding: 10em;
 }
 
 #info {
-    padding: 5em;
+    padding: 10em;
     background-color: grey;
 }
 
@@ -20,6 +20,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index:1; /* To keep navbar at the top of the webpage */
 }
 
 /* Links inside the navbar */
@@ -29,32 +30,52 @@
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
+    font-size: 1.5em;
     text-decoration: none;
   }
 
   /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
     h1 {
-        font-size: 80px;
+        font-size: 5em;
     }
     h2 {
-        font-size: 40px;
+        font-size: 2em;
     }
   }
   
   /* If the screen size is 600px or less, set the font-size of <div> to 30px */
   @media only screen and (max-width: 600px) {
     h1 {
-        font-size: 30px;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 1em;
     }
   }
 
 
-  .project-tile a {
+.project-tile {
+    background-color: white;
+    height: 20em;
+    border: solid;
+    padding: 4em;
+    border-width: 1em;
+    border-radius: 50%;
+    vertical-align: center;
+    text-align: center;
+}
+
+.project-tile a {
     color: black;
     font-size: 2em;
-  }
+    display: inline-block;    
+    
+}
+
+#profile-link {
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 10%;
+}
