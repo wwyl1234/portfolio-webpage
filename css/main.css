@@ -104,4 +104,11 @@ h2 {
     font-size: 2em;
     padding: 1em;
     border-radius: 10%;
+    height: 4em;
+    width: 8em;
+}
+
+#profile-link img{
+    position: relative;
+    max-width: 100%;
 }
