@@ -1,6 +1,7 @@
 #welcome-section {
-    padding: 10em;
+    padding: 10em 10em 10em 5em;
     height: 100vh;
+    border-left: 5em solid yellow;
 }
 
 /* The animation code */
@@ -59,6 +60,39 @@ h2 {
     font-family: 'Helvetica';
 }
 
+
+.project-tile {
+    background-color: white;
+    height: 20em;
+    border: solid;
+    padding: 4em;
+    border-width: 1em;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.project-tile a {
+    color: black;
+    font-size: 2em;
+    font-family: 'Helvetica';
+    display: inline-block;  
+    
+}
+
+#profile-link {
+    font-size: 2em;
+    padding: 1em;
+    border-radius: 10%;
+    height: 4em;
+    width: 8em;
+    border: 0.1em solid black;
+}
+
+#profile-link img {
+    position: relative;
+    max-width: 100%;
+}
+
   /* If the screen size is 601px or more, set the font-size of <div> to 80px */
 @media only screen and (min-width: 601px) {
     h1 {
@@ -78,37 +112,14 @@ h2 {
     h2 {
         font-size: 1em;
     }
+    .project-tile {
+        padding: 1em;
+    }
+
+    .project-tile a {
+        font-size: 1em;
+    }
+
   }
 
 
-.project-tile {
-    background-color: white;
-    height: 20em;
-    border: solid;
-    padding: 4em;
-    border-width: 1em;
-    border-radius: 50%;
-    vertical-align: center;
-    text-align: center;
-}
-
-.project-tile a {
-    color: black;
-    font-size: 2em;
-    font-family: 'Helvetica';
-    display: inline-block;    
-    
-}
-
-#profile-link {
-    font-size: 2em;
-    padding: 1em;
-    border-radius: 10%;
-    height: 4em;
-    width: 8em;
-}
-
-#profile-link img{
-    position: relative;
-    max-width: 100%;
-}
