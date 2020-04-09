@@ -4,6 +4,16 @@
     border-left: 5em solid yellow;
 }
 
+#parallelogram {
+    margin-top: 5em;
+    margin-left: 25em;
+    width: 5em;
+    height: 10em;
+    transform: skew(80deg);
+    background: purple;
+}
+
+
 /* The animation code */
 @keyframes animatename {
     0%   {color: red; font-family: "Monospace"}
@@ -118,6 +128,13 @@ h2 {
 
     .project-tile a {
         font-size: 1em;
+    }
+
+    #parallelogram {
+        margin-top: 2em;
+        margin-left: 7em;
+        width: 2em;
+        height: 4em;
     }
 
   }
