@@ -4,6 +4,7 @@
     border-left: 5em solid yellow;
 }
 
+/*
 #parallelogram {
     margin-top: 5em;
     margin-left: 25em;
@@ -12,6 +13,7 @@
     transform: skew(80deg);
     background: purple;
 }
+*/
 
 
 /* The animation code */
@@ -73,7 +75,7 @@ h2 {
 
 .project-tile {
     background-color: white;
-    height: 20em;
+    height: 30em;
     border: solid;
     padding: 4em;
     border-width: 1em;
