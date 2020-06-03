@@ -105,7 +105,7 @@ h2 {
     max-width: 100%;
 }
 
-  /* If the screen size is 601px or more, set the font-size of <div> to 80px */
+  /* If the screen size is 601px or more */
 @media only screen and (min-width: 601px) {
     h1 {
         font-size: 5em;
@@ -115,15 +115,20 @@ h2 {
     }
   }
   
-  /* If the screen size is 600px or less, set the font-size of <div> to 30px */
+  /* If the screen size is 600px or less */
   @media only screen and (max-width: 600px) {
     h1 {
         font-size: 3em;
     }
 
     h2 {
-        font-size: 1em;
+        font-size: 2em;
     }
+
+    #projects {
+        padding: 1em;
+    }
+
     .project-tile {
         padding: 1em;
     }
@@ -132,12 +137,7 @@ h2 {
         font-size: 1em;
     }
 
-    #parallelogram {
-        margin-top: 2em;
-        margin-left: 7em;
-        width: 2em;
-        height: 4em;
-    }
+
 
   }
 
