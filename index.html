@@ -13,6 +13,8 @@
 
         <!-- Latest compiled JavaScript -->
         <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js'></script> 
+        <!-- Vue library -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
         <script src='script/main.js'></script>
         
@@ -27,115 +29,99 @@
     <body>
         <div id='welcome-section'> 
             <h1>Winnie Lam</h1>
-            <h2> I am software developer that believes in the KISS (Keep It Simple Stupid) principle.</h2>
+            <h2 id='welcome-message'> {{ message }}</h2>
         </div>
         <div id='projects'>
             <h1>Projects</h1>
             <div id='projects-table' class='container-fluid'>
                 <div class='row'>
-                    <div class='project-tile col-md-3'>
-                        <h2>MyLibrary</h2>
-                        <a id='project-mylibrary' href='https://wwyl1234.github.io/my-library/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3' id='project-mylibrary'>
+                        <h2>{{ name }}</h2>
+                        <a id='project-mylibrary-link' href='https://wwyl1234.github.io/my-library/' target='_blank' class='btn btn-info'>
                             App
                         </a>
                         <a href='https://github.com/wwyl1234/my-library' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>jQuery</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Mocha</li>
-                            <li>Chai</li>
-                            <li>Firebase</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
                     </div>
-                    <!-- Do not show this until it has better style and layout
-                        <div class='project-tile col-md-3 col-md-offset-1' onclick="openLink('project-website')">
-                        <a id='project-website' href='https://wwyl1234.github.io/website/' target='_blank'>Website</h2>
-                    </div> 
-                    --->
-                    <div class='project-tile col-md-3 col-sm-offset-1'>
-                        <h2>Software KISS (Blog)</h2>
-                        <a id='project-blog' href='https://software-kiss.herokuapp.com/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-blog'>
+                        <h2>{{ name }}</h2>
+                        <a id='project-blog-link' href='https://software-kiss.herokuapp.com/' target='_blank' class='btn btn-info'>
                             App
                         </a>
                         <a href='https://github.com/wwyl1234/software-kiss' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>Express</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
-                            <li>Heroku</li>
-                            <li>PostgreSQL</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
                     </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1'>
-                        <h2>Survey Form</h2>
-                        <a id='project-survey-form' href='https://wwyl1234.github.io/survey-form/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-survey-form'>
+                        <h2>{{ name }}</h2>
+                        <a id='project-survey-form-link' href='https://wwyl1234.github.io/survey-form/' target='_blank' class='btn btn-info'>
                            App
                         </a>
                         <a href='https://github.com/wwyl1234/survey-form' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
-
                     </div>
                 </div>
                 <div class='row'>
-                    <div class='project-tile col-md-3' >
-                        <h2>Technical Documentation Page</h2>
-                        <a id='technical-documentation-page' href='https://wwyl1234.github.io/technical-documentation-page/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3' id='project-technical-documentation-page'>
+                        <h2>{{ name }}</h2>
+                        <a id='project-technical-documentation-page-link' href='https://wwyl1234.github.io/technical-documentation-page/' target='_blank' class='btn btn-info'>
                             App
                         </a>
                         <a href='https://github.com/wwyl1234/technical-documentation-page' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>Bootstrap</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
                     </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1' >
-                        <h2>Random Quote Machine</h2>
-                        <a id='random-quote-machine' href='https://wwyl1234.github.io/random-quote-machine/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-random-quote-machine' >
+                        <h2>{{ name }}</h2>
+                        <a id='project-random-quote-machine-link' href='https://wwyl1234.github.io/random-quote-machine/' target='_blank' class='btn btn-info'>
                             App
                         </a>
                         <a href='https://github.com/wwyl1234/random-quote-machine' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>React</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
+                        
                     </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1'>
-                        <h2>Markdown Previewer</h2>
-                        <a id='markdown-previewer' href='https://wwyl1234.github.io/markdown-previewer/' target='_blank' class='btn btn-info'>
+                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-markdown-previewer'>
+                        <h2>{{ name }}</h2>
+                        <a id='project-markdown-previewer-link' href='https://wwyl1234.github.io/markdown-previewer/' target='_blank' class='btn btn-info'>
                            App
                         </a>
                         <a href='https://github.com/wwyl1234/markdown-previewer' target='_blank' class='btn btn-warning'>
                             Code
                         </a>
-                        <ul>    
-                            <li>React</li>
-                            <li>Bootstrap</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>HTML</li>
+                        <ul>
+                            <li v-for="item in techs" >
+                              {{ item }}
+                            </li>
                         </ul>
+                        
                     </div>
                 </div>
             </div>
