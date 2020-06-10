@@ -2,18 +2,8 @@
     padding: 10em 10em 10em 5em;
     height: 100vh;
     border-left: 5em solid yellow;
+    background-image: linear-gradient(to bottom right, white, #ADD8E6);;
 }
-
-/*
-#parallelogram {
-    margin-top: 5em;
-    margin-left: 25em;
-    width: 5em;
-    height: 10em;
-    transform: skew(80deg);
-    background: purple;
-}
-*/
 
 
 /* The animation code */
@@ -65,7 +55,7 @@
 
 /* Use the Helvetica font for h1 and h2 tags*/
 h1 {
-    font-family: Helvetica';
+    font-family: 'Helvetica';
 }
 
 h2 {
@@ -95,9 +85,10 @@ h2 {
     font-size: 2em;
     padding: 1em;
     border-radius: 10%;
-    height: 4em;
+    height: 8em;
     width: 8em;
     border: 0.1em solid black;
+    background-color: #d3d3d3;
 }
 
 #profile-link img {
@@ -135,6 +126,20 @@ h2 {
 
     .project-tile a {
         font-size: 1em;
+    }
+
+    #profile-link {
+        font-size: 2em;
+        padding: 1em;
+        border-radius: 10%;
+        height: 4em;
+        width: 4em;
+        border: 0.1em solid black;
+    }
+    
+    #profile-link img {
+        position: relative;
+        max-width: 100%;
     }
 
 
