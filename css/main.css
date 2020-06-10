@@ -108,6 +108,13 @@ h2 {
   
   /* If the screen size is 600px or less */
   @media only screen and (max-width: 600px) {
+    #welcome-section {
+        padding: 10em 10em 10em 5em;
+        height: 100vh;
+        border-left: 1em solid yellow;
+        background-image: linear-gradient(to bottom right, white, #ADD8E6);;
+    }
+
     h1 {
         font-size: 3em;
     }
