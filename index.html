@@ -90,96 +90,94 @@
         </div>
         <div id='projects'>
             <h1>Projects</h1>
-            <div id='projects-table' class='container-fluid'>
-                <div class='row'>
-                    <div class='project-tile col-md-3' id='project-mylibrary'>
-                        <h2>{{ name }}</h2>
-                        <a id='project-mylibrary-link' href='https://wwyl1234.github.io/my-library/' target='_blank' class='btn btn-info'>
-                            App
-                        </a>
-                        <a href='https://github.com/wwyl1234/my-library' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                    </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-blog'>
-                        <h2>{{ name }}</h2>
-                        <a id='project-blog-link' href='https://software-kiss.herokuapp.com/' target='_blank' class='btn btn-info'>
-                            App
-                        </a>
-                        <a href='https://github.com/wwyl1234/software-kiss' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                    </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-survey-form'>
-                        <h2>{{ name }}</h2>
-                        <a id='project-survey-form-link' href='https://wwyl1234.github.io/survey-form/' target='_blank' class='btn btn-info'>
-                           App
-                        </a>
-                        <a href='https://github.com/wwyl1234/survey-form' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                    </div>
+            <div id='projects-table' class='d-flex justify-content-start'>
+                <div class='project-tile' id='project-mylibrary'>
+                    <h2>{{ name }}</h2>
+                    <a id='project-mylibrary-link' href='https://wwyl1234.github.io/my-library/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/my-library' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
                 </div>
-                <div class='row'>
-                    <div class='project-tile col-md-3' id='project-technical-documentation-page'>
-                        <h2>{{ name }}</h2>
-                        <a id='project-technical-documentation-page-link' href='https://wwyl1234.github.io/technical-documentation-page/' target='_blank' class='btn btn-info'>
-                            App
-                        </a>
-                        <a href='https://github.com/wwyl1234/technical-documentation-page' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                    </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-random-quote-machine' >
-                        <h2>{{ name }}</h2>
-                        <a id='project-random-quote-machine-link' href='https://wwyl1234.github.io/random-quote-machine/' target='_blank' class='btn btn-info'>
-                            App
-                        </a>
-                        <a href='https://github.com/wwyl1234/random-quote-machine' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                        
-                    </div>
-                    <div class='project-tile col-md-3 col-sm-offset-1' id='project-markdown-previewer'>
-                        <h2>{{ name }}</h2>
-                        <a id='project-markdown-previewer-link' href='https://wwyl1234.github.io/markdown-previewer/' target='_blank' class='btn btn-info'>
-                           App
-                        </a>
-                        <a href='https://github.com/wwyl1234/markdown-previewer' target='_blank' class='btn btn-warning'>
-                            Code
-                        </a>
-                        <ul>
-                            <li v-for="item in techs" >
-                              {{ item }}
-                            </li>
-                        </ul>
-                        
-                    </div>
+                <div class='project-tile' id='project-blog'>
+                    <h2>{{ name }}</h2>
+                    <a id='project-blog-link' href='https://software-kiss.herokuapp.com/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/software-kiss' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
+                <div class='project-tile' id='project-survey-form'>
+                    <h2>{{ name }}</h2>
+                    <a id='project-survey-form-link' href='https://wwyl1234.github.io/survey-form/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/survey-form' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
+            
+            
+                <div class='project-tile' id='project-technical-documentation-page'>
+                    <h2>{{ name }}</h2>
+                    <a id='project-technical-documentation-page-link' href='https://wwyl1234.github.io/technical-documentation-page/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/technical-documentation-page' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
+                <div class='project-tile' id='project-random-quote-machine' >
+                    <h2>{{ name }}</h2>
+                    <a id='project-random-quote-machine-link' href='https://wwyl1234.github.io/random-quote-machine/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/random-quote-machine' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class='project-tile' id='project-markdown-previewer'>
+                    <h2>{{ name }}</h2>
+                    <a id='project-markdown-previewer-link' href='https://wwyl1234.github.io/markdown-previewer/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/markdown-previewer' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
         </div>
