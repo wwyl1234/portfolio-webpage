@@ -6,7 +6,8 @@
 }
 
 #sidebar {
-   
+    flex-wrap: nowrap;
+    height: 100vh;
     flex-basis: 5em;
     background-image: linear-gradient(to top right, #ffffd4, white);
 }
@@ -19,6 +20,7 @@
     animation-name: animatebox;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+    z-index: 0;
 }
 
 @keyframes animatebox {
@@ -46,6 +48,7 @@
     z-index:1 ;
     flex-grow: 1;
     background-image: linear-gradient(to bottom right, white, #ADD8E6);
+    position: relative;
 }
 
 /* Style my name */
@@ -78,14 +81,17 @@
 }
 
 #projects {
+    width: 100vw;
     background-color: #ADD8E6;
     padding: 10em;
     z-index: 3;
+    position: relative;
 }
 
 #info {
     padding: 10em;
     background-color: grey;
+    width: 100vw;
 }
 
 
@@ -166,7 +172,6 @@ h2 {
   @media only screen and (max-width: 600px) {
     #welcome-area {
         background-image: linear-gradient(to bottom right, white, #ADD8E6);
-       
     }
 
     /* Style my name */
