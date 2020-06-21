@@ -6,11 +6,44 @@
 }
 
 #sidebar {
+   
     flex-basis: 5em;
-    background-image: linear-gradient(to top right, yellow, white);
+    background-image: linear-gradient(to top right, #ffffd4, white);
+}
+
+#sidebar div {
+    
+    border: 1px solid yellow;
+    height: 1em; 
+    width: 1em; 
+    animation-name: animatebox;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animatebox {
+    0%   {}
+    50%  {transform: translate(4em, 0)}
+    100% {transform: translate(0, 0)}
+  }
+
+
+#delay-2 {
+    animation-delay: 2s;
+}
+
+#delay-4 {
+    animation-delay: 4s;
+}
+
+
+
+#sidebar div:hover {
+    transform: scale(4);
 }
 
 #welcome-area{
+    z-index:1 ;
     flex-grow: 1;
     background-image: linear-gradient(to bottom right, white, #ADD8E6);
 }
@@ -47,6 +80,7 @@
 #projects {
     background-color: #ADD8E6;
     padding: 10em;
+    z-index: 3;
 }
 
 #info {
@@ -61,7 +95,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    z-index:1; /* To keep navbar at the top of the webpage */
+    z-index:100; /* To keep navbar at the top of the webpage */
 }
 
 /* Links inside the navbar */
