@@ -167,6 +167,10 @@ h2 {
     background-color: #d3d3d3;
 }
 
+#profile-link:hover{
+    transform: scale(1.2); /* To grow the button, when user hovers over the button */
+}
+
 /* Style the profile link's image */
 #profile-link img {
     position: relative;
