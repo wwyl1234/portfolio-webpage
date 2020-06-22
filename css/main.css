@@ -97,6 +97,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     display: flex;
+    align-items: stretch;
+    align-content: space-around;
 }
 
 /* Style the links section */
@@ -144,8 +146,9 @@ h2 {
     padding: 4em;
     border-width: 1em;
     border-radius: 5%;
-    text-align: center;
     margin: 1em;
+    text-align: center;
+    min-width: 30em;
 }
 
 /* Style the project tile's anchors */
