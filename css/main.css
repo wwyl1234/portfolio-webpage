@@ -224,6 +224,7 @@ h2 {
     /* Style the project tile */
     .project-tile {
         padding: 1em;
+        min-width: 80vw;
     }
 
     /* Style the project tile's anchor */
