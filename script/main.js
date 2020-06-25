@@ -10,6 +10,7 @@ window.onload = function () {
         el: '#project-mylibrary',
         data : {
             name: 'MyLibrary',
+            description: 'A web application to keep a record of my book collection.',
             techs: ['jQuery', 'Bootstrap', 'JavaScript', 'CSS', 'HTML', 'Mocha', 'Chai', 'Firebase'],
         }
     });
@@ -18,6 +19,7 @@ window.onload = function () {
         el: '#project-blog',
         data : {
             name: 'Software KISS (Blog)',
+            description: 'A blog to keep track of my learning and exposure to software-related technologies',
             techs: ['JavaScript', 'CSS', 'HTML', 'Heroku', 'Express', 'PostgreSQL'],
            
         }
@@ -27,6 +29,7 @@ window.onload = function () {
         el: '#project-survey-form',
         data : {
             name: 'Survey Form',
+            description: 'A survey form.',
             techs: ['JavaScript', 'CSS', 'HTML'],
            
         }
@@ -36,6 +39,7 @@ window.onload = function () {
         el: '#project-technical-documentation-page',
         data : {
             name: 'Technical Documentation Page',
+            description: 'A technical documentation page about Bootstrap.',
             techs: ['Bootstrap', 'CSS', 'HTML'],
            
         }
@@ -45,6 +49,7 @@ window.onload = function () {
         el: '#project-random-quote-machine',
         data : {
             name: 'Random Quote Machine',
+            description: 'A random quote machine.',
             techs: ['React', 'Bootstrap', 'JavaScript', 'CSS', 'HTML'],
            
         }
@@ -54,6 +59,7 @@ window.onload = function () {
         el: '#project-markdown-previewer',
         data : {
             name: 'Markdown Previewer',
+            description: 'A markdown previewer.',
             techs: ['React', 'Bootstrap', 'JavaScript', 'CSS', 'HTML'],
            
         }
