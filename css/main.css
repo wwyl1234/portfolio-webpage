@@ -104,7 +104,7 @@
 /* Style the links section */
 #info {
     padding: 10em;
-    background-color: grey;
+    background-color: #bdbdbd;
     width: 100vw;
 }
 
@@ -159,15 +159,22 @@ h2 {
     display: inline-block;  
 }
 
+/* Style the links table */
+#links-table {    
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    align-items: stretch;
+    align-content: space-around;
+}
+
 /* Style the profile link */
 #profile-link {
     font-size: 2em;
     padding: 1em;
-    border-radius: 10%;
     height: 8em;
     width: 8em;
-    border: 0.1em solid black;
-    background-color: #d3d3d3;
+
 }
 
 #profile-link:hover{

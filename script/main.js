@@ -2,7 +2,7 @@ window.onload = function () {
     const welcomeMessage = new Vue({
         el: '#welcome-message',
         data: {
-        message: 'I am software developer that believes in the KISS (Keep It Simple Stupid) principle.'
+        message: 'I design, build, and test software.'
         }
     });
     
