@@ -1,6 +1,9 @@
 The site is located at https://wwyl1234.github.io/portfolio-webpage/.
 
 
+This was initially made as part of the Reponsive Web Design certification from freeCodeCamp. 
+The following are the requirements that were met but now may no longer be satisfied:
+
 
 Requirements are from https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage
 
