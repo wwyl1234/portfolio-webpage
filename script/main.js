@@ -25,16 +25,6 @@ window.onload = function () {
         }
     });
 
-    const projectSurveyForm = new Vue({
-        el: '#project-survey-form',
-        data : {
-            name: 'Survey Form',
-            description: 'A survey form.',
-            techs: ['JavaScript', 'CSS', 'HTML'],
-           
-        }
-    });
-
     const projectTechDocPage = new Vue({
         el: '#project-technical-documentation-page',
         data : {
@@ -61,7 +51,15 @@ window.onload = function () {
             name: 'Markdown Previewer',
             description: 'A markdown previewer.',
             techs: ['React', 'Bootstrap', 'JavaScript', 'CSS', 'HTML'],
-           
+        }
+    });
+
+    const projectDebris = new Vue({
+        el: '#project-debris',
+        data : {
+            name: 'Debris',
+            description: 'An outerspace game.',
+            techs: ['PhaserJS (Phaser3)', 'jQuery','JavaScript', 'CSS', 'HTML'],
         }
     });
 
