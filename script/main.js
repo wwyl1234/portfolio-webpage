@@ -69,12 +69,11 @@ window.onload = function () {
 
 
 function triggerDelayText(){
-    document.getElementById("show-text").style.visibility = "visible";
-    var theDelay = 1;
-    var timer = setTimeout("showDelayedText()", theDelay * 1000);
-}
-
-
-function showDelayedText(){
-  document.getElementById("delayed-text").style.visibility = "visible";
+    document.getElementById('show-text').style.visibility = 'visible';
+    // Delays the text in increments of 1 second
+    for (let i = 1; i <=9; i++) {
+        setTimeout(
+            () => {document.getElementById('delayed-text-'+ i).style.visibility = 'visible';},
+            i * 1000);
+    }
 }

@@ -90,6 +90,14 @@
     color: red;
 }
 
+/* Style the show-text-one-line */
+#show-text-one-line{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 1em;
+}
+
 /* Style the projects section */
 #projects {
     width: 100vw;
@@ -213,7 +221,7 @@ h2 {
     }
     /* Style the welcome message */
     #welcome-message{
-        padding-top: 5em;
+        padding-top: 3em;
         padding-left: 3em;
         padding-right: 1em;
         font-size: 2em;
@@ -232,6 +240,12 @@ h2 {
     /* Style the projects section */
     #projects {
         padding: 1em;
+    }
+
+    /* Style the projects h1 section */
+    #projects h1{
+        padding-top: 1em;
+        padding-left: 1em;
     }
 
     /* Style the project tile */
