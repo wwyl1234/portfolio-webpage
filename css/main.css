@@ -12,12 +12,12 @@
     flex-wrap: nowrap;
     height: 100vh;
     flex-basis: 5em;
-    background-image: linear-gradient(to top right, #ffffd4, white);
+    background-image: linear-gradient(to top right, #000000, pink);
 }
 
 /* Style for the animated box on the sidebar */
 #sidebar div {
-    border: 1px solid yellow;
+    border: 1px solid pink;
     height: 1em; 
     width: 1em; 
     animation-name: animatebox;
@@ -60,11 +60,11 @@
     margin-left: 1em;
 }
 
-/* Style my description */
-#welcome-area h2{
-    margin-top: 4em;
-    margin-left: 3em;
-    margin-right: 1em;
+/* Style the welcome message */
+#welcome-message{
+    padding-left: 5em;
+    padding-top: 1em;
+    font-size: 2.5em;
 }
 
 /* The animation code for my name */
@@ -81,6 +81,13 @@
     position: relative;
     animation-name: animatename;
     animation-duration: 10s;
+}
+
+
+
+/* Style the hover for trigger-hidden-text */
+#trigger-hidden-text:hover{
+    color: red;
 }
 
 /* Style the projects section */
@@ -204,13 +211,12 @@ h2 {
         margin-top: 4em;
         margin-left: 2em;
     }
-
-    /* Style my description */
-    #welcome-area h2{
-        margin-top: 5em;
-        margin-left: 3em;
-        font-size:2em;
-        margin-right: 1em;
+    /* Style the welcome message */
+    #welcome-message{
+        padding-top: 5em;
+        padding-left: 3em;
+        padding-right: 1em;
+        font-size: 2em;
     }
     
     /* Style the h1 */

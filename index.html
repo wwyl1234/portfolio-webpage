@@ -85,7 +85,15 @@
                 </div>
                 <div id='welcome-area'>  
                     <h1>Winnie Lam</h1>
-                    <h2 id='welcome-message'> {{ message }}</h2>
+                    <div id='welcome-message'> 
+                        I design, build, and <span id='trigger-hidden-text' onclick='triggerDelayText()'>test</span> software.
+                        <div id='show-text' style='visibility:hidden'>
+                            And I am highly skilled in . . . 
+                        </div>
+                        <div id='delayed-text' style='visibility:hidden'>
+                            BREAKING SOFTWARE!
+                        </div>
+                    </div>
                 </div>
         </div>
         <div id='projects'>
@@ -183,8 +191,23 @@
                             {{ item }}
                         </li>
                     </ul>
-                    
                 </div>
+                <div class='project-tile' id='project-portfolio-webpage'>
+                    <h2>{{ name }}</h2>
+                    <p> {{ description }}</p>
+                    <a id='project--portfolio-webpage-link' href='https://wwyl1234.github.io/portfolio-webpage/' target='_blank' class='btn btn-info'>
+                        App
+                    </a>
+                    <a href='https://github.com/wwyl1234/portfolio-webpage' target='_blank' class='btn btn-warning'>
+                        Code
+                    </a>
+                    <ul>
+                        <li v-for="item in techs" >
+                            {{ item }}
+                        </li>
+                    </ul>
+                </div>
+
 
             </div>
         </div>

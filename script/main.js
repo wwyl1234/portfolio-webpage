@@ -1,11 +1,4 @@
 window.onload = function () {
-    const welcomeMessage = new Vue({
-        el: '#welcome-message',
-        data: {
-        message: 'I design, build, and test software.'
-        }
-    });
-    
     const projectMyLibrary = new Vue({
         el: '#project-mylibrary',
         data : {
@@ -63,4 +56,25 @@ window.onload = function () {
         }
     });
 
+    const projectPortfolioWebpage = new Vue({
+        el: '#project-portfolio-webpage',
+        data : {
+            name: 'Portfolio Webpage',
+            description: 'This webpage that you are seeing right now',
+            techs: ['Vue', 'Bootstrap', 'jQuery', 'JavaScript', 'CSS', 'HTML'],
+        }
+    });
+
+}
+
+
+function triggerDelayText(){
+    document.getElementById("show-text").style.visibility = "visible";
+    var theDelay = 1;
+    var timer = setTimeout("showDelayedText()", theDelay * 1000);
+}
+
+
+function showDelayedText(){
+  document.getElementById("delayed-text").style.visibility = "visible";
 }
