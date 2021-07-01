@@ -1,7 +1,6 @@
 
 /* Style the welcome section */
 #welcome-section {
-    margin-top: em;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -105,6 +104,12 @@
     padding: 10em;
     z-index: 3;
     position: relative;
+
+}
+/* Style the heading under projects */
+#projects h1{
+    text-align: center;
+    padding-bottom: 1em;
 }
 
 /* Style the project table */
@@ -114,11 +119,12 @@
     display: flex;
     align-items: stretch;
     align-content: space-around;
+    justify-content: space-around;
 }
 
 /* Style the links section */
 #info {
-    padding: 10em;
+    padding: 2em;
     background-color: #bdbdbd;
     width: 100vw;
 }
@@ -144,6 +150,12 @@
     text-decoration: none;
 }
 
+/* Style the links inside the navbar on hover */
+#navbar a:hover {
+    color: black;
+    background-color: white;
+}
+
 /* Use the Helvetica font for h1 and h2 tags */
 h1 {
     font-family: 'Helvetica';
@@ -159,7 +171,7 @@ h2 {
     flex-basis: 0;
     border: solid;
     padding: 4em;
-    border-width: 1em;
+    border-width: 0.5em;
     border-radius: 5%;
     margin: 1em;
     text-align: center;
@@ -181,15 +193,15 @@ h2 {
     display: flex;
     align-items: stretch;
     align-content: space-around;
+    justify-content: space-around;
 }
 
 /* Style the profile link */
 #profile-link {
     font-size: 2em;
-    padding: 1em;
-    height: 8em;
-    width: 8em;
-
+    padding-top: 1.5em;
+    height: 6em;
+    width: 6em;
 }
 
 #profile-link:hover{
@@ -244,8 +256,9 @@ h2 {
 
     /* Style the projects h1 section */
     #projects h1{
+        text-align: center;
         padding-top: 1em;
-        padding-left: 1em;
+        padding-bottom: 1em;
     }
 
     /* Style the project tile */
@@ -262,11 +275,9 @@ h2 {
     /* Style the profile link */
     #profile-link {
         font-size: 2em;
-        padding: 1em;
-        border-radius: 10%;
+        padding-top: 1em;
         height: 4em;
         width: 4em;
-        border: 0.1em solid black;
     }
     
     /* Style the profile link's image */
